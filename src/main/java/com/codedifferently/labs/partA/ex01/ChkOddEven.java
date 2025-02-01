@@ -16,6 +16,6 @@ public class ChkOddEven {
         int num = 0;
         System.out.println("Enter a number:");
         num = in.nextInt();
-
+//comment
     }
 }
