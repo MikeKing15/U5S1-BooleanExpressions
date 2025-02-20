@@ -2,24 +2,22 @@ package com.codedifferently.labs.partB.ex01;
 
 public class BooleanDemoExample {
 
-    public static String bool(){
-        String response= "";
+    public static String bool() {
+        String response = "";
 
-        boolean passed, largeVenue, grade;
+        boolean passed = true;
+        boolean largeVenue = false;
+        boolean goodGrade = passed;
 
-        passed = true;
-        largeVenue = false;
-        grade = passed;
-
-        response += (passed) + "\n";
-        response += (largeVenue)+ "\n";
-        response += (grade);
+        response += passed + "\n";
+        response += largeVenue + "\n";
+        response += goodGrade;
 
         return response;
     }
+
     public static void main(String args[]) {
         String booleanOutput = bool();
         System.out.println(booleanOutput);
-
     }
 }
