@@ -1,21 +1,29 @@
 package com.codedifferently.labs.partB.ex04;
 
-
+import java.util.Scanner;
 
 public class IfElse {
 
-    public static String equalToSeven(){
+    public static String equalToSeven(int number){
         String response = "";
-        /* Put your code in between these comments : Top */
 
-
-        /* Put your code in between these comments : Bottom */
-
+        if (number == 7) {
+            response = "That's lucky!";
+        } else {
+            response = "That's unlucky!";
+        }
 
         return response;
     }
+
     public static void main(String[] args) {
-        String luckyOutput = equalToSeven();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        String luckyOutput = equalToSeven(number);
         System.out.println(luckyOutput);
+
+        scanner.close();
     }
 }
